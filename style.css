@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+body {
+    text-align: center;
+    font-family: cursive;
+}
+
+#sida-1 {
+    background: url(img/campfire\ 4.png) no-repeat center fixed;
+    background-size: 1920px 1080px;
+}
+
+#sida-2 {
+    background: url(img/boat.png) no-repeat center fixed;
+    background-size: 1920px 1080px;
+}
+
+#sida-3 {
+    background: url(img/Fishing.png) no-repeat center fixed;
+    background-size: 1920px 1080px;
+}
+
+p {
+    color: #cbcf99;
+    background-color: black;
+    text-align: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+nav {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    position: absolute;
+
+}
+
+nav li {
+    list-style: none;
+    background-color: red;
+    text-decoration-color: black;
+    padding: 14px;
+    text-decoration: none;
+    margin-bottom: 5px;
+    border-radius: 100%;
+}
+
+nav li:hover {
+    background-color: blue;
+}
+
+nav li a:link {
+    color: black;
+
+}
+
+nav li a:visited {
+    color: black
+}
+
+.titlar-1 {
+    background-color: black;
+    color: dodgerblue;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+.statictitle {
+    color: brown;
+    background-color: black;
+}
+
+.jumpingwords span {
+    position: relative;
+    display: inline-block;
+    animation: animate 2s ease-in-out infinite;
+    animation-delay: calc(0.05s * var(--i));
+}
+
+h1 {
+    background-color: black;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0px);
+        color: red
+    }
+
+    20% {
+        transform: translateY(-20px);
+        color: blue;
+    }
+
+    40%,
+    100% {
+        transform: translateY(0px);
+        color: black;
+    }
+}
